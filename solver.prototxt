@@ -1,0 +1,24 @@
+net: "train_stage2.prototxt"
+
+test_iter: 100
+test_interval: 1000
+
+base_lr: 0.00035
+momentum: 0.9
+momentum2: 0.999
+delta: 0.0000001
+weight_decay: 0.0001
+
+lr_policy: "step"
+gamma: 0.95
+stepsize: 1000
+
+display: 100
+
+max_iter: 150000
+
+snapshot: 10000
+snapshot_prefix: "model/cls_s2_p"
+
+solver_mode: GPU
+type: "Adam"
